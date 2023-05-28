@@ -327,6 +327,7 @@ header.hidden {
   background-color: rgba(30, 30, 30);
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .skill-icons {
@@ -341,6 +342,7 @@ header.hidden {
   flex-direction: column;
   align-items: center;
   margin: 30px;
+  overflow: hidden;
 }
 
 .skill-icon img {
