@@ -159,21 +159,6 @@ body{
   background-color: #868686;
 }
 
-.hide {
-  display: none;
-}
-
-.close #menu-text {
-  display: none;
-}
-
-.close #close-text {
-  display: block;
-}
-
-.show {
-  display: block;
-}
 
 .menu {
   display: flex;
@@ -238,6 +223,7 @@ header {
   top: 0;
   width: 100%;
   transition: top 0.3s;
+  z-index: 99999;
 }
 
 header.hidden {
@@ -313,7 +299,6 @@ header.hidden {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  z-index: -1;
 }
 
 .skill-icons {
