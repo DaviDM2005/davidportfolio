@@ -32,5 +32,28 @@ window.addEventListener('scroll', function() {
   prevScrollPos = currentScrollPos;
 });
 
+// ------
 
 
+function toggleMenu() {
+  var navItems = document.querySelectorAll(".active-li");
+  var checkbox = document.getElementById("check");
+  var menuText = document.getElementById("menu-text");
+  var closeText = document.getElementById("close-text");
+  
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener("click", function() {
+      checkbox.checked = false; // Uncheck the checkbox to disable the menu
+      menuText.classList.remove("hide"); // Show "Menu" text
+      closeText.classList.add("hide"); // Hide "Close" text
+    });
+  }
+  
+  if (checkbox.checked) {
+    menuText.classList.add("hide"); // Hide "Menu" text
+    closeText.classList.remove("hide"); // Show "Close" text
+  } else {
+    menuText.classList.remove("hide"); // Show "Menu" text
+    closeText.classList.add("hide"); // Hide "Close" text
+  }
+}

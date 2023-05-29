@@ -14,28 +14,27 @@
     <title>DAVID</title>
 </head>
 <body>
-    <header>
-        <nav>
-          <ul class='nav-bar'>
-            <li class='logo'><a href='index.html'>DaviD</a></li>
-            <input type='checkbox' id='check' />
-            <span class="menu">
-              <li><a class="active-li" href="#home-sec">Home</a></li>
-              <li><a class="active-li" href="#about">About</a></li>
-              <li><a class="active-li" href="#skills">Skills</a></li>
-              <li><a class="active-li" href="#projects">Projects</a></li>
-              <li><a class="active-li" href="#">Contact</a></li>
-            </span>
-            <label for="check" class="open-menu">
-              <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            </label>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li class="logo"><a href="index.html">DaviD</a></li>
+        <input type="checkbox" id="check" />
+        <span class="menu">
+          <li><a class="active-li" href="#home-sec">Home</a></li>
+          <li><a class="active-li" href="#about">About</a></li>
+          <li><a class="active-li" href="#skills">Skills</a></li>
+          <li><a class="active-li" href="#projects">Projects</a></li>
+          <li><a class="active-li" href="#contact">Contact</a></li>
+        </span>
+        <label for="check" class="open-menu">
+          <div class="container" onclick="toggleMenu()">
+            <h1 id="menu-text">Menu.</h1>
+            <h1 id="close-text" class="hide">Close.</h1>
+          </div>
+        </label>
+      </ul>
+    </nav>
+  </header>
       
     
       
@@ -155,12 +154,138 @@
           <div class="projects">
 
 
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
+            <!-- ---------- -->
+
+            <div class="project">
+
+
+              <div class="gif-div">
+                <img src="gifs/hacakdemy-gif/hackademy.gif">
+              </div>
+
+              <article>
+                <div class="description-div">
+                  <h1>HACKADEMY</h1>
+                  <p>a website, where you can buy any course</p>
+                  <div class="project-tool-icons" ><img src="images/html.png"><img src="images/css-3.png"><img src="images/java-script.png"></div>
+                </div>
+  
+                <div class="view-div">
+                  <a href="https://github.com/DaviDM2005/Hackademy" target="_blank"><div>view code</div></a>
+                  <a href="https://grouphackademy.netlify.app/" target="_blank"><div>live website</div></a>
+                </div>
+              </article>
+
+
+
+            </div>
+
+            <!-- ---------- -->
+
+            <div class="project">
+
+
+              <div class="gif-div">
+                <img src="gifs/tictactoe-gif/tictactoe.gif">
+              </div>
+
+              <article>
+                <div class="description-div">
+                  <h1>tic tac toe</h1>
+                  <p>One of the most famous games</p>
+                  <div class="project-tool-icons" ><img src="images/html.png"><img src="images/css-3.png"><img src="images/java-script.png"></div>
+                </div>
+  
+                <div class="view-div">
+                  <a href="https://github.com/DaviDM2005/tic-tac-toe" target="_blank"><div>view code</div></a>
+                  <a href="https://davidstictactoe.netlify.app/" target="_blank"><div>live website</div></a>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- ---------- -->
+
+            <div class="project">
+
+
+              <div class="gif-div">
+                <img src="gifs/currencycalculator-gif/currencycalculator.gif">
+              </div>
+
+              <article>
+                <div class="description-div">
+                  <h1>currency calculator</h1>
+                  <p>You can calculate the amount of other currency(api)</p>
+                  <div class="project-tool-icons" ><img src="images/html.png"><img src="images/css-3.png"><img src="images/java-script.png"></div>
+                </div>
+  
+                <div class="view-div">
+                  <a href="https://github.com/DaviDM2005/currency-calculator" target="_blank"><div>view code</div></a>
+                  <a href="https://davidscurrencycalculator.netlify.app/" target="_blank"><div>live website</div></a>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- ---------- -->
+
+            <div class="project">
+
+
+              <div class="gif-div">
+                <img src="gifs/davidsportfolio-gif/davidportfolio.gif">
+              </div>
+
+              <article>
+                <div class="description-div">
+                  <h1>MY PORTFOLIO</h1>
+                  <p>You are currently on my portfolio ))</p>
+                  <div class="project-tool-icons" ><img src="images/html.png"><img src="images/css-3.png"><img src="images/java-script.png"></div>
+                </div>
+  
+                <div class="view-div">
+                  <a href="https://github.com/DaviDM2005/davidportfolio" target="_blank"><div>view code</div></a>
+                  <a href="https://davidmamuladze.netlify.app/" target="_blank"><div>live website</div></a>
+                </div>
+              </article>
+
+
+
+            </div>
+
+            
+
+            <!-- ---------- -->
+
+            <div class="project">
+
+
+              <div class="gif-div">
+                <img src="gifs/first-website-gif/first-web.gif">
+              </div>
+
+              <article>
+                <div class="description-div">
+                  <h1>my first website ever</h1>
+                  <p>it's my first website ever. i made it 2-3 years ago</p>
+                  <div class="project-tool-icons" ><img src="images/html.png"><img src="images/css-3.png"></div>
+                </div>
+  
+                <div class="view-div">
+                  <a href="https://github.com/DaviDM2005/my-first-website" target="_blank"><div>view code</div></a>
+                  <a href="https://davidsfirstwebsite.netlify.app/" target="_blank"><div>live website</div></a>
+                </div>
+              </article>
+
+
+
+            </div>
+
+            <!-- ---------- -->
+
+
+            
 
 
 
@@ -168,6 +293,44 @@
 
 
         </section>
+        
+
+        <section id="contact">
+
+          <div class="left-side" >
+              <h1>Send me a message and I'll help you as much as I can!</h1>
+              <p>My goal is to help as much as possible to all people who really need help.</p>
+
+              <div class="info-icons">
+                <a href="https://www.facebook.com/profile.php?id=100033497610947" target="_blank"><img src="images/social-links/facebook.png" ></a>
+                <a href="https://www.instagram.com/d_mamuladze777/" target="_blank"><img src="images/social-links/instagram.png" ></a>
+                <a href="mailto:david.mamuladze777@gmail.com" target="_blank"><img src="images/social-links/email.png" ></a>
+                <a href="https://github.com/DaviDM2005" target="_blank"><img src="images/social-links/github.png" ></a>
+                <a href="https://www.linkedin.com/in/davit-mamuladze-9b3810249/" target="_blank"><img src="images/social-links/linkedin.png" ></a>
+                <a href="tel:+995574220448" target="_blank"><img src="images/social-links/phone-call.png" ></a>
+              </div>
+          </div>
+
+
+
+          <div class="right-side">
+
+            <div class="message-div">
+              <h1>contact me</h1>
+              <form>
+                <input placeholder="your name" type="text" required>
+                <input placeholder="your email" type="email" required>
+                <textarea style="resize: none;" placeholder="your message" required></textarea>
+                <button>SUBMIT</button>
+              </form>
+            </div>
+
+          </div>
+
+        </section>
+        
+        
+        
 
         
         
@@ -177,7 +340,7 @@
 
 
     <footer>
-
+      <p>powered by DAVID MAMULADZE -  ALL RIGHTS RESERVED</p>
     </footer>
 
 
