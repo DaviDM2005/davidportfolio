@@ -6,7 +6,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     scroll-behavior: smooth;
 }
 
@@ -22,78 +22,6 @@ body{
 }
 
 
-
-
-#home-sec{
-    min-height: 98vh;
-    padding: 0 70px;
-    display: flex;
-    align-items: center;
-}
-
-@media screen and (min-width: 760px){
-  .home-sec-main-div{
-    width: 40%;
-  }
-}
-
-#home-sec h1{
-    font-size: 70px;
-    color: rgb(190, 190, 190);
-    margin-top: 50px;
-}
-#home-sec p{
-    color: grey;
-    font-size: 25px;
-}
-#home-sec article{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  
-  /* ----- */
-  
-  @media screen and (max-width: 1000px){
-    #home-sec h1{
-      font-size: 50px;
-    }
-    .arrow-img-div{
-      width: 200px !important;
-    }
-  }
-
-
-  @media screen and (max-width: 760px){
-    .arrow-img-div{
-      display: none;
-    }
-    .arrow-img{
-      display: none;
-    }
-    #home-sec h1{
-      width: 100%;
-    }
-  }
-  
-
-@media screen and (min-width: 760px){
-  #home-sec{
-    margin-top: 50px;
-}
-}
-  
-  
-  
-::-webkit-scrollbar{
-    width: 0;
-}
-
-
-
-
-
 /* burger menu */
 
 .nav-bar {
@@ -105,7 +33,7 @@ body{
   position: fixed;
   padding: 10px 20px;
   z-index: 999;
-  background-color: rgba(30, 30, 30, 0.5);
+  background: rgba(30, 30, 30, 0.501);
 }
 .logo{
   z-index: 9999;
@@ -233,6 +161,85 @@ header.hidden {
 
 
 
+/* home section */
+
+#home-sec{
+    min-height: 98vh;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+}    
+
+@media screen and (min-width: 760px){
+  .home-sec-main-div{
+    width: 40%;
+  }  
+}  
+
+#home-sec h1{
+    font-size: 70px;
+    color: rgb(190, 190, 190);
+    margin-top: 50px;
+}    
+#home-sec p{
+    color: grey;
+    font-size: 25px;
+}    
+#home-sec article{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }  
+  
+  
+  /* ----- */
+  
+  @media screen and (max-width: 1000px){
+    #home-sec h1{
+      font-size: 50px;
+    }  
+    .arrow-img-div{
+      width: 200px !important;
+    }  
+  }  
+
+
+  @media screen and (max-width: 760px){
+    .arrow-img-div{
+      display: none;
+    }  
+    .arrow-img{
+      display: none;
+    }  
+    #home-sec h1{
+      width: 100%;
+    }  
+  }  
+  
+
+@media screen and (min-width: 760px){
+  #home-sec{
+    margin-top: 50px;
+}    
+}
+  
+  
+  
+::-webkit-scrollbar{
+    width: 0;
+}    
+
+
+.name-span{
+  color: transparent;
+  -webkit-text-stroke:0.4px rgb(203, 203, 203);
+}
+
+
+
+
+
+
 
 
 /* About */
@@ -260,22 +267,22 @@ header.hidden {
 }
 
 @media screen and (min-width: 1160px){
-  .about-me{
+  #about-me{
     width: 40%;
   }
 }
 
-.about-me{
+#about-me{
   margin: 0 25px;
 }
 
 
-.about-me h1{
+#about-me h1{
   font-size: 50px;
   -webkit-text-stroke: 0.5px rgb(171, 171, 171);
   color: transparent;
 }
-.about-me p{
+#about-me p{
   font-size: 30px;
   color: rgb(171, 171, 171);
 }
@@ -648,4 +655,22 @@ footer{
   color: rgb(175, 175, 175);
   font-size: 15px;
   padding: 10px;
+}
+
+
+
+
+
+/* animation */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
